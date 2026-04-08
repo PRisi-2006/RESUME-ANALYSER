@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Analysis Result</h1>
+
+    <h2>Score: {{score}}%</h2>
+
+    <h3>Skills Found:</h3>
+    <ul>
+        {% for skill in skills %}
+        <li>{{skill}}</li>
+        {% endfor %}
+    </ul>
+
+    <h3>Achievements:</h3>
+    <ul>
+        {% for item in achievements %}
+        <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+
+    <a href="/">Go Back</a>
+</div>
+
+</body>
+</html>
